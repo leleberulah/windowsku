@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/mrtampan/windows-rdp/main/download.bat" -OutFile "downloads.bat"
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/mrtampan/zzzwindowszzz/main/download.bat" -OutFile "downloads.bat"
           cmd /c downloads.bat
       - name: Log In To AnyDesk
         run: cmd /c show.bat
       - name: Time Counter
-        run: python time.py
+        run: python timer.py
 	
